@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        // querySelector는 "첫 번째 태그만" 선택!!
+        var headers = document.querySelectorAll("h1");
+        for (var i = 0; i < headers.length; i++) {
+          var header = headers[i];
+
+          header.style.color = "orange";
+          header.style.background = "red";
+          header.innerHTML = "From JavaScript";
+        }
+
+        console.log(headers);
+      };
+    </script>
+  </head>
+  <body>
+    <h1>header 1</h1>
+    <h1>header 1</h1>
+    <h1>header 1</h1>
+  </body>
+</html>
